@@ -157,17 +157,17 @@ window.onload = function() {
             str += data_title[i];
         }
     }
-    data_tile_true.push(str);
+    data_title_true.push(str);
     str = "";
     for (let i = 0; i < data_number.length; i++) {
         if (data_number[i] === ",") {
-            data_tile_true.push(str);
+            data_title_true.push(str);
             str = "";
         } else {
             str += data_number[i];
         }
     }
-    data_tile_true.push(str);
+    data_title_true.push(str);
     str = "";
     for (let i = 0; i < data_title_true.length; i++) {
         let add_title = data_title_true[i];
