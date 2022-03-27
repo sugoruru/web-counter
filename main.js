@@ -169,7 +169,11 @@ window.onload = function() {
     }
     number.push(Number(str));
     str="";
-    for (let i = 0; i < title.length-1; i++) {
+    if (title[0]==""){
+        title=["カウンター"];
+        number=[0];
+    }
+    for (let i = 0; i < title.length; i++) {
         let add_title = title[i];
         data["title"].push(title[i]);
         data["number"].push(number[i]);
