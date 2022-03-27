@@ -159,6 +159,16 @@ window.onload = function() {
     }
     title.push(str);
     str="";
+    for (let i = 0; i < data_number.length; i++){
+        if(data_number[i]===","){
+            number.push(Number(str));
+            str="";
+        }else{
+            str+=data_number[i];
+        }
+    }
+    number.push(Number(str));
+    str="";
     for (let i = 0; i < title.length; i++) {
         let add_title = title[i];
         data["title"].push(title[i]);
