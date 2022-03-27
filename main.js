@@ -172,7 +172,7 @@ window.onload = function() {
     for (let i = 0; i < title.length; i++) {
         let add_title = title[i];
         data["title"].push(title[i]);
-        data["number"].push(0);
+        data["number"].push();
         let new_ele = document.createElement("div");
         new_ele.style.width = "300px";
         new_ele.style.height = "300px";
