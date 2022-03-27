@@ -146,12 +146,12 @@ setInterval(mainloop, 20);
 window.onload = function() {
     let data_title = localStorage.getItem("title");
     let data_number = localStorage.getItem("number");
-    let data_tile_true = [];
+    let data_title_true = [];
     let data_number_true = [];
     let str = "";
     for (let i = 0; i < data_title.length; i++) {
         if (data_title[i] === ",") {
-            data_tile_true.push(str);
+            data_title_true.push(str);
             str = "";
         } else {
             str += data_title[i];
