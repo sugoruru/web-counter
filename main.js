@@ -144,12 +144,23 @@ function counter_delete() {
 }
 setInterval(mainloop, 20);
 window.onload = function() {
-    let data_title = JSON.parse(localStorage.getItem("title"));
-    let data_number = JSON.parse(localStorage.getItem("number"));
-    for (let i = 0; i < data_title.length; i++) {
-        let add_title = data_title[i];
-        data["title"].push(data_title[i]);
-        data["number"].push(data_number[i]);
+    let data_title = localStorage.getItem("title");
+    let data_number = localStorage.getItem("number");
+    let title = [];
+    let number = [];
+    let str = "";
+    for (let i = 0; i < data_title.length; i++){
+        if(data_title[i]===","){
+            title.push(str);
+            str="";
+        }else{
+            str+=data_title[i];
+        }
+    }
+    for (let i = 0; i < title.length; i++) {
+        let add_title = title[i];
+        data["title"].push(title[i]);
+        data["number"].push(0);
         let new_ele = document.createElement("div");
         new_ele.style.width = "300px";
         new_ele.style.height = "300px";
