@@ -169,7 +169,7 @@ window.onload = function() {
     }
     data_title_true.push(str);
     str = "";
-    for (let i = 0; i < data_title_true.length; i++) {
+    for (let i = 0; i < data_title_true.length-1; i++) {
         let add_title = data_title_true[i];
         data["title"].push(data_title_true[i])
         data["number"].push(data_number_true[i]);
