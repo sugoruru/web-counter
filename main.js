@@ -146,8 +146,8 @@ setInterval(mainloop, 20);
 window.onload = function() {
     let data_title = localStorage.getItem("title");
     let data_number = localStorage.getItem("number");
-    let title = ["カウンター"];
-    let number = [0];
+    let title = [];
+    let number = [];
     let str = "";
     for (let i = 0; i < data_title.length; i++){
         if(data_title[i]===","){
