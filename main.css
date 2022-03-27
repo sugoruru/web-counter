@@ -178,9 +178,9 @@ body {
 
 #not_delete::after {
     white-space: pre;
-    content: "カウンターが作成されていません";
+    content: "カウンターが１つ以下です\A２つは作成してください";
     position: relative;
-    top: 16px;
+    top: 8px;
     font-size: 13px;
     color: #fff;
 }
