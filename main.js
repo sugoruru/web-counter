@@ -115,7 +115,7 @@ function counter_reset() {
 }
 
 function delete_counter() {
-    if (data["title"].length !== 0) {
+    if (data["title"].length !== 0||data["title"].length !== 1) {
         document.getElementById("select_option_box").style.zIndex = "2";
         document.getElementById("select_option_box").style.visibility = "visible";
         document.getElementById("select_option_box").style.opacity = 1;
@@ -146,8 +146,8 @@ setInterval(mainloop, 20);
 window.onload = function() {
     let data_title = localStorage.getItem("title");
     let data_number = localStorage.getItem("number");
-    let title = [];
-    let number = [];
+    let title = ["カウンター"];
+    let number = [0];
     let str = "";
     for (let i = 0; i < data_title.length; i++){
         if(data_title[i]===","){
