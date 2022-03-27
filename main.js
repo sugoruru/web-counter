@@ -157,6 +157,8 @@ window.onload = function() {
             str+=data_title[i];
         }
     }
+    title.push(str);
+    str="";
     for (let i = 0; i < title.length; i++) {
         let add_title = title[i];
         data["title"].push(title[i]);
