@@ -115,9 +115,9 @@ function counter_reset() {
 }
 
 function delete_counter() {
-    document.getElementById("not_delete").style.visibility = "visible";
-    document.getElementById("not_delete").style.opacity = "1";
-    setTimeout(function() { document.getElementById("not_delete").style.opacity = "0" }, 1000);
+    document.getElementById("select_option_box").style.zIndex = "2";
+    document.getElementById("select_option_box").style.visibility = "visible";
+    document.getElementById("select_option_box").style.opacity = 1;
 }
 
 function delete_cancel() {
