@@ -115,15 +115,9 @@ function counter_reset() {
 }
 
 function delete_counter() {
-    if (data["title"].length !== 0||data["title"].length !== 1) {
-        document.getElementById("select_option_box").style.zIndex = "2";
-        document.getElementById("select_option_box").style.visibility = "visible";
-        document.getElementById("select_option_box").style.opacity = 1;
-    } else {
-        document.getElementById("not_delete").style.visibility = "visible";
-        document.getElementById("not_delete").style.opacity = "1";
-        setTimeout(function() { document.getElementById("not_delete").style.opacity = "0" }, 1000);
-    }
+    document.getElementById("not_delete").style.visibility = "visible";
+    document.getElementById("not_delete").style.opacity = "1";
+    setTimeout(function() { document.getElementById("not_delete").style.opacity = "0" }, 1000);
 }
 
 function delete_cancel() {
